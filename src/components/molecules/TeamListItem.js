@@ -15,10 +15,10 @@ const TeamListItem = (props) => {
                 />
             <View style={styles.textGroup1}>
                 <Text style={styles.smallText}>
-                    Small title
+                    {props.team.challengeName}
                 </Text>
                 <Text style={styles.bigText}>
-                    Big and long title title title
+                    {props.team.teamName}
                 </Text>
             </View>
             <View style={styles.textGroup2}>
@@ -26,7 +26,7 @@ const TeamListItem = (props) => {
                     How long
                 </Text>
                 <Text style={styles.bigText}>
-                    14 days
+                    {props.team.activityDays}
                 </Text>
             </View>
             <Icon
@@ -44,7 +44,8 @@ const styles=StyleSheet.create({
     container: {
         flex: 1, 
         flexDirection: 'row', 
-        margin: '1%', 
+        // marginHorizontal: '3%',
+        marginVertical: '1%', 
         backgroundColor: colors.lightgray, 
         padding: '1%', 
         borderTopColor: colors.yellowgreen, 
