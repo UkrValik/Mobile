@@ -17,11 +17,12 @@ class AccountScreen extends React.Component {
                 borderBottomWidth: 5,
                 elevation: 0,
             },
-            headerTintColor: colors.textColor,
+            headerTintColor: colors.mainColor,
             headerTitleStyle: {
                 flex: 1,
                 marginRight: '20%',
-                textAlign: 'center'
+                textAlign: 'center',
+                color: colors.textColor,
             },
         });
 
