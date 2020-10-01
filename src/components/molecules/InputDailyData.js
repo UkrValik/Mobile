@@ -13,7 +13,8 @@ const InputDailyData = (props) => {
                 </Text>
                 <DropDownPicker 
                     containerStyle={{width: Dimensions.get('screen').width / 24 * 7}}
-                    labelStyle={{color: colors.textColor}}
+                    style={{borderTopLeftRadius: 0, borderTopRightRadius: 0, borderBottomLeftRadius: 0, borderBottomRightRadius: 0, backgroundColor: colors.mainBgColor}}
+                    labelStyle={{color: colors.textColor, fontSize: 12}}
                     arrowColor={colors.textColor}
                     defaultValue='18.09.2020'
                     items={[
@@ -27,9 +28,9 @@ const InputDailyData = (props) => {
                     Input data
                 </Text>
                 {props.manualDataInput && (
-                    <View style={{flexDirection: 'row', }}>
+                    <View style={{flexDirection: 'row', alignItems: 'center', backgroundColor: colors.mainBgColor}}>
                         <Input
-                            containerStyle={{width: Dimensions.get('screen').width / 24 * 7}}
+                            containerStyle={{width: Dimensions.get('screen').width / 24 * 7, height: Dimensions.get('screen').height / 14}}
                             onChangeText={() => {}}
                             />
                         <Icon

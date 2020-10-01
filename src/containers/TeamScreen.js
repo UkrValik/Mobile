@@ -47,7 +47,7 @@ class TeamScreen extends React.Component {
                 <TeamScreenIcons team={this.state.team}/>
                 <MonthChallengeDiagram consumer={teamResponse.participants[0]} team={teamResponse} month='Sep' from={18} till={27}/>
                 <InputDailyData toggleDataInput={this.toggleDataInput} manualDataInput={this.state.manualDataInput}/>                
-                <RatingButton/>
+                <RatingButton navigate={this.props.navigation.navigate}/>
             </ScrollView>
         );
     }

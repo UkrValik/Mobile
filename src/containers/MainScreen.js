@@ -20,7 +20,6 @@ class MainScreen extends React.Component {
             headerTintColor: colors.textColor,
             headerTitleStyle: {
                 flex: 1,
-                marginLeft: '20%',
                 textAlign: 'center'
             },
             headerRight: () => (
@@ -32,6 +31,9 @@ class MainScreen extends React.Component {
                     size={26}
                     onPress={() => this.props.navigation.navigate('Account')}
                     />
+            ),
+            headerLeft: () => (
+                <View></View>
             )
         });
     }
