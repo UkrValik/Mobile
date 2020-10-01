@@ -35,6 +35,7 @@ const TeamListItem = (props) => {
                 name='chevron-right'
                 size={30}
                 color={colors.yellowgreen}
+                onPress={() => props.navigate('Team', { team: props.team })}
                 />
         </View>
     );

@@ -30,7 +30,7 @@ class MainScreen extends React.Component {
                     containerStyle={{flex: 1, justifyContent: 'center',marginRight: 10}}
                     color={colors.mainColor}
                     size={26}
-                    onPress={() => props.navigation.navigate('Account')}
+                    onPress={() => this.props.navigation.navigate('Account')}
                     />
             )
         });
@@ -38,7 +38,7 @@ class MainScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <TeamList teams={TEAMS}/>
+                <TeamList teams={TEAMS} navigate={this.props.navigation.navigate}/>
             </View>
         );
     }

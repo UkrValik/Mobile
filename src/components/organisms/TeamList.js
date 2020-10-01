@@ -5,7 +5,7 @@ import TeamListItem from '../molecules/TeamListItem';
 const TeamList = (props) => {
     return (
         <ScrollView style={{marginTop: 3}}>
-            {props.teams.map(team => (<TeamListItem key={team.teamId} team={team}/>))}
+            {props.teams.map(team => (<TeamListItem key={team.teamId} team={team} navigate={props.navigate}/>))}
         </ScrollView>
     );
 }
